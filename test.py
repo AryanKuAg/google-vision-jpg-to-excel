@@ -63,7 +63,7 @@ for fileIncrement in range(1, 10):
     # This function works correctly
 
     ENDPOINT_URL = 'https://vision.googleapis.com/v1/images:annotate'
-    api_key = "AIzaSyAzKRLBchQ1am1EPJd_vTyeobRzkzG-XvU"
+    api_key = data['api_key']
     img_loc = "rawImage/"+FILE_NAME+".jpg"
 
     result = requestOCR(ENDPOINT_URL, api_key, img_loc)
